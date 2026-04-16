@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+    color: #1b2340;
+    line-height: 1.6;
+}
+
+.encabezado {
+    background: linear-gradient(to bottom, #142850, #1c2f5c);
+    color: white;
+    text-align: center;
+    padding: 35px 20px 20px;
+    border-top: 4px solid #b8bdd3;
+}
+
+
+.encabezado h1 {
+    font-weight: bold;
+    font-size: 3rem;
+    margin-bottom: 15px;
+
+}
+
+.meta {
+    padding-top: 10px;
+    border-top: 2px solid #6f7aa0;
+    font-size: 1.4rem;
+    color: #d2d7e8;
+}
+
+.contenedor {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.noticia {
+    background-color: #e6e6e6;
+}
+
+.imagen-principal img {
+    width: 100%;
+    display: block;
+    margin-bottom: 25px;
+}
+
+.contenido {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.texto-principal h2 {
+    padding-bottom: 15px;
+    border-bottom: 2px solid #d3d3d3;
+    margin-bottom: 20px;
+    color: #1c2f5c;
+    font-size: 2.2rem;
+}
+
+.texto-principal p {
+    padding-bottom: 15px;
+    border-bottom: 2px solid #d3d3d3;
+    margin-bottom: 20px;
+    color: #1c2f5c;
+    font-size: 2.2rem;
+}
+
+.texto-principal ul {
+    margin-left: 25px;
+    font-size: 1.2rem;
+}
+
+.texto-principal li {
+    margin-bottom: 12px;
+}
+
+.dato {
+    flex: 1;
+    background-color: #1c2f5c;
+    color: white;
+    padding: 25px 20px;
+}
+
+.dato h3 {
+    margin-bottom: 15px;
+    border-bottom: 2px solid #b8bdd3;
+    font-size: 1.8rem;
+    padding-bottom: 10px;
+
+}
+
+.dato p {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+
+
+.comentario {
+    text-align: center;
+    border-top: 2px solid #d3d3d3;
+    padding-top: 25px;
+    margin-top: 40px;
+}
+
+.comentario button {
+    background-color: #d98c1f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.4rem;
+    padding: 15px 35px;
+
+}
+
+.comentario button:hover {
+    opacity: 0.9;
+}
+
+
+
+@media (max-width: 768px) {
+    .encabezado h1 {
+        font-size: 2rem;
+    }
+
+    .contenido {
+        flex-direction: column;
+    }
+
+    .texto-principal h2 {
+        font-size: 1.6rem;
+    }
+
+    .comentario h2 {
+        font-size: 1.5rem;
+    }
+}
